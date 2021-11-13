@@ -1,4 +1,4 @@
-import { CalendarDateComponents } from './CalendarDate/CalendarDateComponents'
+import { CalendarDateComponents } from '../CalendarDate/CalendarDateComponents'
 import style from './_MainPage.module.css'
 
 export const MainPage = (): JSX.Element => {

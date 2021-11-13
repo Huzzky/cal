@@ -1,0 +1,6 @@
+.BlockOfComponents {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows:5% 87% 8%;
+}

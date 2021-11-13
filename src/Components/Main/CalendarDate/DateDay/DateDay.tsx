@@ -1,16 +1,18 @@
-import { useDispatch, useSelector } from 'react-redux'
-import { loadCalendar } from '../../../../store/actions/loadCalendarAction'
 import style from './assets/_DateDay.module.css'
 import { DayInTheCalendar } from './DayInTheCalendar'
 
 export const DateDay = () => {
-  const state = useSelector(
-    ({ monthDateReducer }: { monthDateReducer: { arrDate: number[] } }) =>
-      monthDateReducer.arrDate,
-  )
+  let generateDayInCalendar = (): number[] => {
+    let arrayDate: number[] = []
+    for (let i = 0; i < +new Date(2021, 10, 0).getDate(); i++) {
+      arrayDate.push(i + 1)
+    }
+    return arrayDate
+  }
+
   return (
     <div className={style.dateDayBlock}>
-      {state.map((value, index) => {
+      {generateDayInCalendar().map((value, index) => {
         return <DayInTheCalendar key={index} DayNumber={value} />
       })}
     </div>
