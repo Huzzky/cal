@@ -1,11 +1,12 @@
 import style from './assets/_NoteBlock.module.css'
+import { BackgroundFormNote } from './atoms/BackgroundFormNote'
+import { NoteBlockForm } from './NoteBlockForm'
 
 export const NoteBlock = () => {
   return (
     <div className={style.NoteBlock}>
-      <form className={style.FormNoteBlock}>
-        <input type="text" className={style.FormNoteBlock__Input} />
-      </form>
+      <NoteBlockForm />
+      <BackgroundFormNote />
     </div>
   )
 }
