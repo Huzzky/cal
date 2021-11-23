@@ -27,8 +27,11 @@ export const userActionsReducer = (
       return {
         ...state,
         openNoteForDate: true,
+        // установка выбранного дня
         selectedDay: selectedDay,
+        // установка выбранного месяца
         selectedMonth: selectedMonth,
+        // установка выбранного года
         selectedYear: selectedYear,
       }
     case CLOSE_FORM_FOR_WRITE_TO_DAY_NOTE:
@@ -36,6 +39,8 @@ export const userActionsReducer = (
         ...state,
         openNoteForDate: false,
         selectedDay: '',
+        selectedMonth: '',
+        selectedYear: '',
       }
     default:
       return state
