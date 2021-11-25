@@ -1,0 +1,47 @@
+.BtnOpenFormNote {
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: 3px solid rgb(65, 54, 219);
+    width: 10%;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.BtnOpenFormNote:hover {
+    border-radius: 2px;
+    background: rgb(65, 54, 219);
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+
+.BtnCloseFormNote {
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: 3px solid rgb(230, 37, 188);
+    width: 10%;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+
+.BtnCloseFormNote:hover {
+    border-radius: 2px;
+    background: rgb(230, 37, 188);
+    /* box-shadow: -2px 2px 5px 5px rgb(230, 37, 188); */
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}

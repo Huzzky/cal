@@ -5,7 +5,17 @@ export const DateMonth = () => {
   return (
     <>
       <h1>{[new Date().getFullYear()]}</h1>
-      <h2>{months[new Date(2021, 11, 0).getMonth()]}</h2>
+      <h2>
+        {
+          months[
+            new Date(
+              new Date().getFullYear(),
+              new Date().getMonth() + 1,
+              0,
+            ).getMonth()
+          ]
+        }
+      </h2>
       <DateDay />
     </>
   )

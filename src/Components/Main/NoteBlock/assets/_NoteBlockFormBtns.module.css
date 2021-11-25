@@ -1,0 +1,6 @@
+.NoteBlockFormBtnsBlock {
+    display: flex;
+    height: 7%;
+   justify-content: space-between;
+   
+}
