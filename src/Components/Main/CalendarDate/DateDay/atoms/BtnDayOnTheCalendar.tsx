@@ -3,13 +3,7 @@ import { variableNoteArr } from '../../../../../config'
 import { userOpenOrCloseNote } from '../../../../../store/actions/userOpenOrCloseNote'
 import style from '../assets/_DayInTheCalendar.module.css'
 
-type BtnDayOnTheCalendarProps = {
-  value: {
-    DayNumber: number
-  }
-}
-
-export const BtnDayOnTheCalendar = ({ value }: BtnDayOnTheCalendarProps) => {
+export const BtnDayOnTheCalendar = (value: { NumberOfDay: number }) => {
   const state = useSelector(
     ({
       userActionsReducer,
@@ -20,13 +14,13 @@ export const BtnDayOnTheCalendar = ({ value }: BtnDayOnTheCalendarProps) => {
   const dispatch = useDispatch()
   return (
     <button
-      disabled={!state.openNoteForDate ? false : true}
+      disabled={state.openNoteForDate ? true : false}
       className={style.DayBlock}
       onClick={() => {
-        userOpenOrCloseNote(dispatch, variableNoteArr[1], value.DayNumber)
+        userOpenOrCloseNote(dispatch, variableNoteArr[1], value.NumberOfDay)
       }}
     >
-      <p className={style.DayNumber}>{value.DayNumber}</p>
+      <p className={style.DayNumber}>{value.NumberOfDay}</p>
     </button>
   )
 }

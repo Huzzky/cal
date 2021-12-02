@@ -2,7 +2,6 @@ import {
   CHANGE_MONTH_ON_CALENDAR,
   CHANGE_YEAR_ON_CALENDAR,
   LOADING_MONTH_AND_YEAR,
-  OPEN_FORM_FOR_WRITE_TO_DAY_NOTE,
 } from '../../config'
 
 const initialState: object = {
